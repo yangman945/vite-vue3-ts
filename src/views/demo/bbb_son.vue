@@ -1,14 +1,11 @@
 <template>
 <div id="app-wrapper">
-    <Menu/>
+    <div>我是<span>BBBBBB的儿子</span></div>
 </div>
 </template>
 <script lang="ts">
 import { defineComponent} from "vue";
-import Menu from './components/menu/index.vue'
-export default defineComponent({
-    components:{Menu}
-})
+export default defineComponent({})
 </script>
 <style lang="scss" scoped>
 #app-wrapper{}

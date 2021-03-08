@@ -1,6 +1,7 @@
 <template>
 <div id="app-wrapper">
     <div>我是<span>BBBBBB</span></div>
+    <router-view />
 </div>
 </template>
 <script lang="ts">

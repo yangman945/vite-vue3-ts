@@ -1,0 +1,7 @@
+/* 默认元素样式修改 */
+button {
+    cursor:pointer;
+    border-radius: 0;
+    border: 1px solid #e3e3e3;
+    outline: none;
+}

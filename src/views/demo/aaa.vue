@@ -1,6 +1,7 @@
 <template>
 <div id="app-wrapper">
     <div>我是<span>AAAAAA</span></div>
+    <button type="text">按钮</button>
 </div>
 </template>
 <script lang="ts">
