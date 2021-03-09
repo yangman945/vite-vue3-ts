@@ -3,7 +3,6 @@
         <!-- v-slot:title 父级目录名称 -->
       <template v-slot:title>
         <span>
-          <icon-font style="color: aliceblue" :type="menuInfo.meta.icon" />
           <span>{{ menuInfo.meta.title }}</span>
         </span>
       </template>

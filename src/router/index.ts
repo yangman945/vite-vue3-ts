@@ -1,10 +1,11 @@
 import { RouteRecordRaw, createRouter, createWebHashHistory } from 'vue-router'
-import {markRaw} from 'vue'
+import { markRaw } from 'vue'
 import LayoutIndex from "@/layout/index.vue"
-import {exitView} from "./components/index"
+import { exitView } from "./components/index"
 export const routes: RouteRecordRaw[] = [
     {
         path: "/",
+        name:"container",
         component: LayoutIndex,
         redirect: "/home",
         meta: {
@@ -16,7 +17,7 @@ export const routes: RouteRecordRaw[] = [
                 name: 'home',
                 component: () => import(/* webpackChunkName:"group-user" */ '../views/home/index.vue'),
                 meta: {
-                    title: "主页"
+                    title: "主页",
                 }
             }, {
                 path: "/aaa",
@@ -29,7 +30,7 @@ export const routes: RouteRecordRaw[] = [
                     {
                         path: "aaa_son",
                         name: "aaa_son",
-                        component: () => import('../views/demo/aaa_son.vue'),
+                        component: exitView,
                         meta: {
                             title: "啊啊啊的儿砸"
                         },
@@ -43,7 +44,15 @@ export const routes: RouteRecordRaw[] = [
                                 },
                             }
                         ]
-                    }
+                    },{
+                                
+                        path:'aaa_boy',
+                        name: "aaa_boy",
+                        component: () => import('../views/demo/aaa_boy.vue'),
+                        meta: {
+                            title: "hahahahh"
+                        },
+                }
                 ]
             }, {
                 path: "/bbb",
