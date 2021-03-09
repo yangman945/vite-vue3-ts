@@ -1,6 +1,6 @@
 <template>
 <div id="app-wrapper">
-    <div>我是<span>AAAAAA的孙子</span></div>
+    <div>我是<span>AAAAAA的孙子??????</span></div>
     
 </div>
 </template>

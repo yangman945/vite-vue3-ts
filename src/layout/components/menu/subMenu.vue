@@ -19,7 +19,7 @@
         <!-- 二级嵌套end -->
         <!-- 多级嵌套start -->
         <template v-else>
-          <menu-item :menuInfo="item" :key="item.name"/>
+          <SubMenu :menuInfo="item" />
         </template>
         <!-- 多级嵌套end -->
       </template>
@@ -28,7 +28,7 @@
     <!-- 一级嵌套start -->
     <a-menu-item v-else :key="menuInfo.name">
         <i>11</i>
-      <span>{{menuInfo.meta.title}}</span>
+        <span>{{menuInfo.meta.title}}</span>
     </a-menu-item>
     <!-- 一级嵌套end -->
 </template>

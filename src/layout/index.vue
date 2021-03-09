@@ -11,7 +11,7 @@
       <a-layout-header></a-layout-header>
       <!-- 右侧主体内容 -->
       <a-layout-content>
-          <Keep />
+          <exitView />
       </a-layout-content>
       <!-- 右侧底部内容 -->
       <a-layout-footer></a-layout-footer>
@@ -19,11 +19,11 @@
   </a-layout>
 </template>
 <script lang="ts">
+import exitView from '@/router/components/exit-view.vue'
 import {defineComponent} from 'vue'
-import Keep from './components/Keep.vue'
 import layoutLeft from './layoutLeft.vue'
 export default defineComponent({
-    components:{Keep,layoutLeft},
+    components:{layoutLeft,exitView},
 })
 </script>
 <style lang="scss">
