@@ -1,12 +1,20 @@
 <template>
 <div id="app-wrapper">
-    <div>我是<span>AAAAAA的孙子??????</span></div>
-    
+    <div>
+
+    </div>
 </div>
 </template>
 <script lang="ts">
 import { defineComponent} from "vue";
-export default defineComponent({})
+export default defineComponent({
+    setup(){
+        const sayFn = <T>(params:T) : T=>{
+            return params
+        }
+        console.log(sayFn('123'),"执行")
+    }
+})
 </script>
 <style lang="scss" scoped>
 #app-wrapper{}

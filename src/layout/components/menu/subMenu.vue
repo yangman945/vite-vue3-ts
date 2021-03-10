@@ -38,17 +38,13 @@ export default defineComponent({
   name: "SubMenu",
   components: {
     'a-sub-menu': Menu.SubMenu,
-    'a-menu-item': Menu.Item,
-    
+    'a-menu-item': Menu.Item
   },
   props: {
     menuInfo: {
       type: Object,
       default: () => ({}),
     },
-  },
-  mounted() {
-    console.log(this.menuInfo);
   },
 });
 </script>
